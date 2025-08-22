@@ -12,14 +12,19 @@ pipeline {
     stages {
         stage('Terraform Plan') {
             steps {
-                sh 'terraform init'
-                sh 'terraform plan -out=tfplan'
+                bat '''
+                   cd 'C:\Users\kamak\Documents\Terraform\VMSS'
+                   terraform init'
+                   terraform plan -out=tfplan
+                   '''
             }
         }
 
         stage('Terraform Apply') {
             steps {
-                sh 'terraform apply -auto-approve tfplan'
+                bat '''
+                  terraform apply -auto-approve tfplan
+                  '''
             }
         }
     }
