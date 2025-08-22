@@ -10,11 +10,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  client_id = "4f703a45-8f95-4190-a2df-3107ec0059e1"
-  client_secret = "SxQ8Q~hhJhPetxca.XoAjL0Sj6TEZPlbHVDEna0F"
-  tenant_id = "5e865d62-8ae0-4163-9923-646bf3b4ffa1"
-  subscription_id = "a01bd4dc-3157-43b6-a8f9-a9a3c40a0e8c" # Optional if using Azure CLI logn
-}
+  }
 
 
 
